@@ -12,7 +12,7 @@ npm install output-loader --save-dev
 ## Usage
 
 Add output-loader as the last loader in the loader chain and specify a file
-path as a query option. You can even specify multiple output-loaders throughout
+path as a query option (the path shoule be relative to your project's root directory). You can even specify multiple output-loaders throughout
 the chain. Just [never break the chain](https://www.youtube.com/watch?v=PppUJ_JGq2U).
 
 ```js
