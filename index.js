@@ -15,7 +15,9 @@ module.exports = function(source) {
   if (!query.path || query.path.trim() === '') {
     callback("Yo dawg, you didn't specify a path. Stop trippin.", source);
   } else {
-    filePath = path.join(this.context, query.path);
+    filePath = loaderUtils.interpolateName(this, query.path, {
+      context: query.context || this.options.context
+    });
 
     // Time to make the directories.
     mkdirp(path.parse(filePath).dir, err => {

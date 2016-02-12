@@ -1,6 +1,6 @@
 {
   "name": "output-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Webpack loader that writes source to a file.",
   "homepage": "https://github.com/ianwalter/output-loader",
   "main": "index.js",
